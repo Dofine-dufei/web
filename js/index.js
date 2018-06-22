@@ -85,6 +85,18 @@ $(function(){
 		
 	})
 	
+	$(".musicBtn").click(function(){
+		var music=$("#music")[0];
+		//document.getElementById("#music")
+		if(music.paused){
+			music.play();
+			$(this).attr("src","img/musicBtn.png")
+		}else{
+			music.pause();
+			$(this).attr("src","img/musicBtnOff.png")
+		}
+	})
+	
 })
 
 //$(document).ready(function(){
