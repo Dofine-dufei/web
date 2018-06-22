@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.content{
+	position: absolute;
+	/*top:-100%;*/
+}
+
+.page{
+	/*相对定位*/
+	position: relative;
+}
+
+img{
+	position: absolute;
+}
+
+.page1{
+	background:#00ccff;
+	/*background: url(../img/page1.jpg);*/
+	background-size: 100%;
+}
+.page1-Building{
+	width: 100%;
+	height: 20%;
+	bottom: 0;
+	display:none;
+}
+
+.page1-Elements{
+	width: 100%;
+	height: 100%;
+	animation: zooming 2.2s linear infinite;
+}
+
+.page1-Cloud{
+	width: 90%;
+	height: 90%;
+	animation: zooming 2s linear infinite;
+}
+@keyframes zooming{
+	0%{transform: scale(0.8);}
+	50%{transform: scale(1);}
+	100%{transform: scale(0.8);}
+}
+
+@keyframes flight{
+	0%{transform: scale(0.8);}
+	25%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	75%{transform: scale(1);}
+	100%{transform: scale(0.8);}
+}
+
+.page1-Flight{
+	width: 0%;
+	height: 30%;
+	position: absolute;
+	bottom: 300px;
+	left: 15%;
+	animation: flight 2.5s linear infinite;
+}
+
+.page1-Flowers01{
+	width: 18%;
+	z-index:1;
+	left: 8%;
+	top: 16%;
+	animation: rotate 3s linear infinite;
+}
+
+.page1-Flowers02{
+	width: 20%;
+	z-index:1;
+	right: 16%;
+	top: 27%;
+	animation:rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(30deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0deg);}
+}
+.page1-Stars{
+	width: 100%;
+	height: 100%;
+}
+
+.page1-Txt{
+	width: 60%;
+	height: 20%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 15%;
+}
+
+.page2{
+	background: aquamarine;
+}
+
+.page2-Bg{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.page2-Farm{
+	width: 70%;
+	right: 0;
+	top: 20%;
+	display: none;
+}
+
+.page2-IT{
+	width: 70%;
+	right: 0;
+	top: 60%;
+	display: none;
+}
+
+
+.page2-Star{
+	width: 100%;
+	height: 100%;
+}
+
+.page3{
+	background: blue;
+}
+
+.page3-bus{
+	bottom:14%;
+	z-index:1;
+	height:30%;
+}
+.page3-BusAvatar{
+	z-index:2;
+	bottom:19%;
+	right:8%;
+	width:30%;
+}
+.page3-BusStation{
+	width: 100%;
+	bottom: 0;
+	z-index: 1;
+}
+.page3-BusTitle{
+	width:30%;
+	top:10%;
+	/*display: none;*/
+	z-index: 1;
+}
+.page3-earlyBg{
+	width: 100%;
+	height: 100%;
+}
+.page3-earlyBuilding{
+	width:100%;
+	bottom:0;
+}
+.page3-earlyTitle{
+	width:30%;
+	/*display: none;*/
+	z-index: 1;
+}
+.page3-Avatar{
+	width:20%;
+	bottom:65%;
+	right:15%;
+	display: none;
+}
+.page3-Space{
+	width:0%;
+	top:18%;
+	
+	
+}
+.page3-wall{
+	right:0;
+	bottom:0;
+	height:70%;
+	
+	display: none;
+}
+.page3-where{
+	width:0%;
+	bottom:10%;
+	
+}
+.page4{
+	background: paleturquoise;
+}
+
+
+.page4-title{
+	z-index: 1;
+    right: 0px;
+    top: 10%;
+}
+
+.page4-light{
+	bottom: 0;
+    left: 5%;
+    height: 70%;
+}
+
+.page4-guide{
+	z-index: 1;
+    width: 70%;
+    top: 41%;
+    left: 27%;
+}
+
+.page4-bg2{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.page4-txt{
+	top: 33%;
+    left: 26%;
+    width: 56%;
+    display: none;
+}
+.page4-bg{
+	width: 100%;
+	height: 100%;
+}
